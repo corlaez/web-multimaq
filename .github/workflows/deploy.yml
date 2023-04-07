@@ -1,0 +1,15 @@
+name: Deploy Webhook
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: HTTP Request Action
+      uses: fjogeleit/http-request-action@4cbc7a46b206a7aad09ef774775110b7b94f8523
+      with:
+        url: ${{ secrets.MULTIMAQ_DEPLOY_WEBHOOK }}
+        method: GET
