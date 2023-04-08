@@ -13,5 +13,4 @@ This favicon was generated using https://favicon.io/favicon-generator/ and the f
 
 ## TODO:
 * ms browserconfig icons
-* og banner
 * Link to attribution page
