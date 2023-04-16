@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="canonical" href="https://multimaqperu.com/">
-    <link rel="stylesheet" href="/styles.css">
+<!--    <link rel="stylesheet" href="/styles.css">-->
+    <link rel="stylesheet" href="https://unpkg.com/missing.css@1.0.9/dist/missing.min.css">
     <meta name="viewport" content="user-scalable=yes, width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="robots" content="index, follow">
     <meta name="description"
@@ -19,7 +20,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_PE">
     <meta property="og:site_name" content="MULTIMAQ PERU">
-    <meta property="og:image" content="/assets/banner.png">
+    <meta property="og:image" content="assets/banner.png">
 
     <!--    <meta name="twitter:image" content="/assets/banner.png">-->
     <!--    <meta name="twitter:card" content="summary_large_image">-->
@@ -29,68 +30,102 @@
     <!--    <meta name="twitter:site_name" content="@">-->
     <!--    <meta name="twitter:title" content="MULTIMAQ PERU">-->
     <!--    <meta name="twitter:description" content="">-->
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <!--    <meta name="msapplication-TileColor" content="#D6322C">-->
     <!--    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">-->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <script>if('serviceWorker' in navigator){navigator.serviceWorker.register("/serviceWorker.js")}</script>
 
     <title>Multimaq Peru</title>
+    <style>
+        .logo  {
+           width: 80%;
+        }
+        @media (max-width: 50em) {
+            .sm-hide  {
+               display:none;
+            }
+        }
+        @media (min-width: 50em) {
+            .sm-show  {
+               display:none;
+            }
+        }
+        @media (min-width: 60em) {
+            html  {
+               font-size:24px;
+            }
+            .logo  {
+               width: 60%;
+            }
+        }
+    </style>
 </head>
-<body style="
-margin: 0; 
-padding: 0; 
-">
-</body>
-<div style="
-background-color: #D6322C;
-height: 100vh; 
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 150%;
-">
-    <div style="
-padding: 10px;
-width: 90%;
-border-radius: 10px;
-background-image: url('assets/a.png');
-background-size: 400px, auto;
-text-align: center;
-">
-        <div style="
-display: inline-block;
-padding-left: 20px;
-padding-right: 20px;
-border-radius: 10px;
-background: #EEEEEEE3;
-">
-        <h1>MULTIMAQ PERÚ</h1>
-        <h2>En construcción</h2>
-        <br/>
-        <a style="
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       "
-           href="https://wa.me/+51943510954">
-            <img src="assets/wa.png" width="25px" style="margin-right:10px"/>
-            WhatsApp
-        </a>
-        <br/>
-        <a style="
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    "
-           href="tel:+51943510954">
-            <img src="assets/phone.png" width="25px" style="margin-right:10px"/>943 510 954</a>
-        <br/>
+<body style="height: 100vh;background: #bd1717;">
+<div style="padding: var(--gap);">
+    <div class="center">
+        <img class="logo" src="assets/logo.jpg"/>
+        <span style="margin:0;">
+            Maquinaria y equipos de las mejores marcas del mundo
+        </span>
+    </div>
+    <div class="box" style="background: whitesmoke;">
+        <h1 class="center" style="color: black;">
+            Contacto
+        </h1>
+        <div class="f-row sm-hide">
+            <div style="width:50%" class="center">
+                <img src="assets/a.png" style="margin-right:10px; width:400px"/>
+            </div>
+            <div style="width:50%" >
+                <a style="white-space:nowrap" href="mailto:multimaq.ventas@gmail.com">
+                    <img src="assets/mail.svg" style="margin-right:10px; width:25px"/>
+                    multimaq.ventas@gmail.com
+                </a>
+                <br/>
+                <br/>
+                <a style="white-space:nowrap" href="https://wa.me/+51943510954">
+                    <img src="assets/logo-whatsapp.svg" style="margin-right:10px; width:25px"/>
+                    WhatsApp
+                </a>
+                <br/>
+                <br/>
+                <a style="white-space:nowrap" href="tel:+51943510954">
+                    <img src="assets/call.svg" style="margin-right:10px; width:25px"/>
+                    943 510 954
+                </a>
+            </div>
+        </div>
+        <div class="f-col sm-show">
+            <div class="center">
+                <div style="width:80%">
+                    <a style="white-space:nowrap" href="mailto:multimaq.ventas@gmail.com">
+                        <img src="assets/mail.svg" style="margin-right:10px; width:25px"/>
+                        multimaq.ventas@gmail.com
+                    </a>
+                    <br/>
+                    <br/>
+                    <a style="white-space:nowrap" href="https://wa.me/+51943510954">
+                        <img src="assets/logo-whatsapp.svg" style="margin-right:10px; width:25px"/>
+                        WhatsApp
+                    </a>
+                    <br/>
+                    <br/>
+                    <a style="white-space:nowrap" href="tel:+51943510954">
+                        <img src="assets/call.svg" style="margin-right:10px; width:25px"/>
+                        943 510 954
+                    </a>
+                </div>
+            </div>
+            <div class="center">
+                <img src="assets/a.png" style="margin-right:10px; width:400px"/>
+            </div>
         </div>
     </div>
 </div>
+</body>
 </html>
